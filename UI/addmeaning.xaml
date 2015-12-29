@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="App1.addmeaning"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Popup x:Name="add"  AllowDrop="True" >
+        <StackPanel Orientation="Vertical" MaxWidth="200">
+            <StackPanel.Background>
+                <ImageBrush x:Name="backimage" ImageSource="ms-appx:///backlog/1.jpg" />
+            </StackPanel.Background>
+            <TextBox x:Name="text" Text="add your note" TextWrapping="Wrap"></TextBox>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="addnote" Content="add" Click="Button_Click" Margin="20,2,20,2" Background="Transparent"/>
+                <Button Content="cancel" Click="Button_Click_1" Margin="20,2,20,2" Background="Transparent"/>
+            </StackPanel>
+        </StackPanel>
+    </Popup>
+</Page>

@@ -109,12 +109,19 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addmeaning.xaml.cs">
+      <DependentUpon>addmeaning.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Popup.xaml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Properties\UI.rd.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="addmeaning.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Popup.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

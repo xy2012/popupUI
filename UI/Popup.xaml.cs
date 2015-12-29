@@ -28,7 +28,15 @@ namespace App1
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     /// 
+    public class addmore
+    {
+        public static void  addmeaning(string s)
+        {
+            Popup.add_temp = s;
+            operation.addmeaning(Popup.ptn,s);
+        }
 
+    }
 
     public sealed partial class Popup : Page
     {
@@ -37,13 +45,9 @@ namespace App1
         int flag_move = 0;
         public int style_cnt = 1;
         private bool closed_flag = false;
-        public Popup()
+        public  Popup()
         {
             this.InitializeComponent();
-            //       string str = "C:\\Users\\v-xiafe\\Desktop\\UI\\UI\\config.txt";
-
-
-
             mborder.AddHandler(PointerPressedEvent, new PointerEventHandler(Popup_PointerPressed), true);
             mborder.AddHandler(PointerReleasedEvent, new PointerEventHandler(WordPopup_PointerReleased), true);
             mborder.AddHandler(PointerMovedEvent, new PointerEventHandler(WordPopup_PointerMoved), true);
@@ -176,7 +180,7 @@ namespace App1
         {
             textBox1.Text = a;
         }
-        public void addbutton(string b, string a, int i)
+        public  void addbutton(string b, string a, int i)
         {
             Button btn = new Button();
             this.shiyi.Children.Add(btn);
@@ -294,6 +298,11 @@ namespace App1
         public static bool flags_tap=false;
         public static bool flags_ = false;
         public static int k_cnt;
+
+        public static string add_temp="0";
+        
+
+        /*
         private void update_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
@@ -330,8 +339,34 @@ namespace App1
                 }
             }
         }
+        */
 
-       
+        public async void update_Click(object sender, RoutedEventArgs e)
+        {
+            double x = WordPopup.HorizontalOffset;
+            double y = WordPopup.VerticalOffset;
+            addmeaning mess = new addmeaning(x,y);
+        }
+
+        private void cancelbtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (add_temp != "0")
+            {
+                if (add_temp.Length > 15)
+                {
+                    addbutton("more. " + add_temp, "more. " + add_temp.Substring(0, 15), k_cnt);
+
+                }
+                else
+                {
+                    addbutton("more. " + add_temp, "more. " + add_temp, k_cnt);
+                }
+                k_cnt = k_cnt + 1;
+                add_temp = "0";
+            }
+        }
+
+        /*
         private void cancelbtn_Click(object sender, RoutedEventArgs e)
         {
             flags_tap = true;
@@ -355,7 +390,7 @@ namespace App1
             tap[12] = false;
             k_cnt = k_cnt - 1;
         }
-
+*/
         private void TextBox_TextChanged(object sender, RoutedEventArgs e)
         {
             if (flags_tap==true)
@@ -395,6 +430,9 @@ namespace App1
                 return "00";
             });
         }
+
+       
+
         public async Task<string> check_closes()
         {
             while (!closed_flag) { }

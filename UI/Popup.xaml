@@ -31,7 +31,7 @@
                     <StackPanel  Width="65" BorderThickness="2">
                         <Button Background="Transparent" x:Name="stylechange" Click="Stylechange_Click" Content="style" Foreground="#FF0E0D0D" />
                         <Button Background="Transparent" x:Name="selfupdate" Click="update_Click"   Content="Uself" Foreground="#FF0E0D0D" />
-                        <Button Background="Transparent" x:Name="cancelbtn"  Content="cancel" Click="cancelbtn_Click" Foreground="#FF0E0D0D" />
+                        <Button Background="Transparent" x:Name="cancelbtn"  Content="update" Click="cancelbtn_Click" Foreground="#FF0E0D0D" />
                         <Button Background="Transparent" x:Name="moref3"  Content="more" Foreground="#FF0E0D0D" />
                     </StackPanel>
                 </StackPanel>

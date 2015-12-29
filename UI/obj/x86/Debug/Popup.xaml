@@ -31,7 +31,7 @@
                     <StackPanel  Width="65" BorderThickness="2">
                         <Button x:ConnectionId='6' Background="Transparent" x:Name="stylechange"                           Content="style" Foreground="#FF0E0D0D" />
                         <Button x:ConnectionId='7' Background="Transparent" x:Name="selfupdate"                        Content="Uself" Foreground="#FF0E0D0D" />
-                        <Button x:ConnectionId='8' Background="Transparent" x:Name="cancelbtn"  Content="cancel"                         Foreground="#FF0E0D0D" />
+                        <Button x:ConnectionId='8' Background="Transparent" x:Name="cancelbtn"  Content="update"                         Foreground="#FF0E0D0D" />
                         <Button x:ConnectionId='9' Background="Transparent" x:Name="moref3"  Content="more" Foreground="#FF0E0D0D" />
                     </StackPanel>
                 </StackPanel>
