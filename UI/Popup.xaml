@@ -12,7 +12,7 @@
         <Border x:Name="mborder" >
             <StackPanel x:Name="log"  Orientation="Vertical" BorderThickness="2" CornerRadius="10" RequestedTheme="Dark" BorderBrush="#FFBBDAE6">
                 <StackPanel.Background>
-                    <ImageBrush x:Name="backimage" ImageSource="ms-appx:///backlog/5.jpg" />
+                    <ImageBrush x:Name="backimage" ImageSource="ms-appx:///backlog/20.jpg" />
                 </StackPanel.Background>
                 <Grid >
                     <TextBox x:Name="textBox1" BorderBrush="Transparent" Background="Transparent" HorizontalAlignment="Left"  Text="I am a TextBox" TextChanged="TextBox_TextChanged" Margin="2,6,2,2"  MaxWidth="250"  Foreground="#FF319AC1" />
@@ -21,16 +21,16 @@
                 <StackPanel  Orientation="Horizontal" BorderBrush="#FFBBDAE6" BorderThickness="1" CornerRadius="10">
                     <ScrollViewer  ZoomMode="Enabled" MaxZoomFactor="10" 
                          
-                           Height="200" Width="240" Foreground="#FF171616">
+                           Height="200" Width="240" Foreground="#FF171616" VerticalScrollBarVisibility="Hidden">
                         <StackPanel >
-                            <TextBlock x:Name="Showup" TextWrapping="Wrap"  VerticalAlignment="Center" Margin="0,0,10,0" Visibility="Visible" Foreground="#FF0EAAE4"/>
+                            <TextBlock x:Name="Showup" TextWrapping="Wrap"  VerticalAlignment="Center" Margin="20,0,5,0" Visibility="Visible" Foreground="#FF0EAAE4"/>
                             <StackPanel x:Name="shiyi">
                             </StackPanel>
                         </StackPanel>
                     </ScrollViewer>
                     <StackPanel  Width="65" BorderThickness="2">
                         <Button Background="Transparent" x:Name="stylechange" Click="Stylechange_Click" Content="style" Foreground="#FF0E0D0D" />
-                        <Button Background="Transparent" x:Name="selfupdate" Click="update_Click"   Content="Uself" Foreground="#FF0E0D0D" />
+                        <Button Background="Transparent" x:Name="selfupdate" Click="update_Click"   Content="note" Foreground="#FF0E0D0D" />
                         <Button Background="Transparent" x:Name="cancelbtn"  Content="update" Click="cancelbtn_Click" Foreground="#FF0E0D0D" />
                         <Button Background="Transparent" x:Name="moref3"  Content="more" Foreground="#FF0E0D0D" />
                     </StackPanel>

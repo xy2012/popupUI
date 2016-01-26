@@ -59,6 +59,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">

@@ -18,6 +18,7 @@ using Dtree;
 using System.Resources;
 using Windows.UI.Xaml.Media.Imaging;
 using System.Text;
+using Windows.UI.Text;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -187,10 +188,18 @@ namespace App1
             btn.Content = a;
             btn.Name = i + b;
             btn.Click += new RoutedEventHandler(click_button);
+            btn.PointerMoved += btn_PointerMoved;
             btn.Foreground = textBox1.Foreground;
             ImageBrush imageBrush = new ImageBrush();
             btn.Background = imageBrush;//去背景
 
+        }
+
+        private void btn_PointerMoved(object sender, PointerRoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            
+            btn.Foreground = textBox1.Foreground;
         }
 
         private char ch;

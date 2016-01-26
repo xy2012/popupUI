@@ -31,4 +31,3 @@ C:\Users\v-xiafe\Desktop\UI\UI\obj\x86\Debug\addmeaning.g.i.cs
 C:\Users\v-xiafe\Desktop\UI\UI\obj\x86\Debug\addmeaning.g.cs
 C:\Users\v-xiafe\Desktop\UI\UI\obj\x86\Debug\addmeaning.xaml
 C:\Users\v-xiafe\Desktop\UI\UI\obj\x86\Debug\addmeaning.xbf
-C:\Users\v-xiafe\Desktop\UI\UI\obj\x86\Debug\UI.csprojResolveAssemblyReference.cache

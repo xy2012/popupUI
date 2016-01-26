@@ -12,7 +12,7 @@
         <Border x:ConnectionId='2' x:Name="mborder" >
             <StackPanel x:ConnectionId='3' x:Name="log"  Orientation="Vertical" BorderThickness="2" CornerRadius="10" RequestedTheme="Dark" BorderBrush="#FFBBDAE6">
                 <StackPanel.Background>
-                    <ImageBrush x:ConnectionId='4' x:Name="backimage" ImageSource="ms-appx:///backlog/5.jpg" />
+                    <ImageBrush x:ConnectionId='4' x:Name="backimage" ImageSource="ms-appx:///backlog/20.jpg" />
                 </StackPanel.Background>
                 <Grid >
                     <TextBox x:ConnectionId='12' x:Name="textBox1" BorderBrush="Transparent" Background="Transparent" HorizontalAlignment="Left"  Text="I am a TextBox"                                   Margin="2,6,2,2"  MaxWidth="250"  Foreground="#FF319AC1" />
@@ -21,16 +21,16 @@
                 <StackPanel  Orientation="Horizontal" BorderBrush="#FFBBDAE6" BorderThickness="1" CornerRadius="10">
                     <ScrollViewer  ZoomMode="Enabled" MaxZoomFactor="10" 
                          
-                           Height="200" Width="240" Foreground="#FF171616">
+                           Height="200" Width="240" Foreground="#FF171616" VerticalScrollBarVisibility="Hidden">
                         <StackPanel >
-                            <TextBlock x:ConnectionId='10' x:Name="Showup" TextWrapping="Wrap"  VerticalAlignment="Center" Margin="0,0,10,0" Visibility="Visible" Foreground="#FF0EAAE4"/>
+                            <TextBlock x:ConnectionId='10' x:Name="Showup" TextWrapping="Wrap"  VerticalAlignment="Center" Margin="20,0,5,0" Visibility="Visible" Foreground="#FF0EAAE4"/>
                             <StackPanel x:ConnectionId='11' x:Name="shiyi">
                             </StackPanel>
                         </StackPanel>
                     </ScrollViewer>
                     <StackPanel  Width="65" BorderThickness="2">
                         <Button x:ConnectionId='6' Background="Transparent" x:Name="stylechange"                           Content="style" Foreground="#FF0E0D0D" />
-                        <Button x:ConnectionId='7' Background="Transparent" x:Name="selfupdate"                        Content="Uself" Foreground="#FF0E0D0D" />
+                        <Button x:ConnectionId='7' Background="Transparent" x:Name="selfupdate"                        Content="note" Foreground="#FF0E0D0D" />
                         <Button x:ConnectionId='8' Background="Transparent" x:Name="cancelbtn"  Content="update"                         Foreground="#FF0E0D0D" />
                         <Button x:ConnectionId='9' Background="Transparent" x:Name="moref3"  Content="more" Foreground="#FF0E0D0D" />
                     </StackPanel>
